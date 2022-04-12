@@ -1,0 +1,18 @@
+#!/usr/bin/perl -w
+# Example 4-4   Calculating the reverse complement of a strand of DNA
+
+$DNA='ACGGGAGGACGGGAAAATTACTACGGCATTAGC';
+
+print "Here is the starting DNA:\n\n";
+
+print "$DNA\n\n";
+
+$revcom=reverse $DNA;
+
+$revcom=~tr/ACGTacgt/TGCAtgca/;
+
+print "Here is the reverse compliment DNA:\n\n";
+
+print "$revcom\n"; 
+
+exit;

@@ -1,0 +1,25 @@
+$proteinfilename=‘NM_021964fragment.pep’;
+
+open (PROTEINFILE,proteinfilename) ;
+
+$protein=<PROTEINFILE>;
+
+print “\nHere is the first line of the protein file:\n\n”;
+
+print $protein;
+
+$protein=<PROTEINFILE>;
+
+print “\nHere is the second line of the protein file:\n\n”;
+
+print $protein;
+
+$protein=<PROTEINFILE>;
+
+print “\nHere is the third line of the protein file:\n\n”;
+
+print $protein;
+
+close PROTEINFILE;
+
+exit;
